@@ -1,5 +1,5 @@
 {% set name = "xai" %}
-{% set version = "0.1.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xai-{{ version }}.tar.gz
-  sha256: b4804f7d244bdcc5d28d3163bf229e66e3731d604d6897fcc593bcf63577a5ad
+  sha256: 59363f05a45dd9e9d07ab6327146c2b42f974fe56bfd040e05d90ddd10ff6a5f
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
